@@ -13,8 +13,8 @@ spec:
         akshay: yeole
     spec:
       containers:
-        - name: mynginxCont
-          image: nginx:latest
+        - name: mynginxcont
+          image: nginx
           ports:
             - containerPort: 80
 
