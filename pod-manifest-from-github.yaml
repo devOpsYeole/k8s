@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mynginx
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      akshay: yeole
+  template:
+    metadata:
+      labels:
+        akshay: yeole
+    spec:
+      containers:
+        - name: mynginxCont
+          image: nginx:latest
+          ports:
+            - containerPort: 80
+
+  
+
